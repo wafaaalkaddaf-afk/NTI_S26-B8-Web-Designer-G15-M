@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<body>
+    <form action="about.html" autocomplete="off" method="post">
+
+        <div>
+            who you are<br>
+            <div>
+                <label for="firstName">firstname :</label>
+                <input type="text" id="firstName" autofocus autocomplete="off" name="firstName" required
+                    placeholder="enter your first Name">
+            </div>
+            <div>
+                <label for="userLastName">last name : </label>
+                <input type="text" id="userLastName" name="lastName"
+                 placeholder="enter your last Name">
+            </div>
+        </div>
+
+        <div>
+            your trip<br>
+            <div>
+                <label for="cityName">city you visited :</label>
+                <input type="text" id="cityName" autocomplete="off" name="cityName" required
+                    placeholder="enter the city you visited">
+            </div>
+            <div>
+                <label for="userCountry">country : </label>
+                <input type="text" id="userCountry" name="country">
+            </div>
+
+            <div>
+                <label for="hotelArea">hotel area</label>
+                <input type="text" id="hotelArea" name="hotelArea" value="cairo" readonly>
+            </div>
+<div>
+    <label for="tripDate">trip date</label>
+    <input type="date" id="tripDate" name="tripDate">
+
+    <label for="tripDateTime">check-in date &time</label>
+    <input type="datetime-local" id="tripDateTime" name="tripDateTime">
+
+    <label for="tripMonth">trip month</label>
+    <input type="month" id="tripMonth" name="tripMonth">
+</div>
+
+        <div>
+            <h2>share your review after your trip</h2>
+
+            <label for="userEmail">email</label>
+            <input type="email" id="userEmail" name="userEmail">
+        </div>
+
+        <div>
+            traveler type<br>
+            <input type="radio" id="travelerSolo" name="travelerType" value="0">
+            <label for="travelerSolo">solo</label>
+            <input type="radio" id="travelerFamily" name="travelerType" value="1">
+            <label for="travelerFamily">family</label>
+        </div>
+
+        <div>
+            what did you like<br>
+            <input type="checkbox" id="likedFood" name="liked[]" value="food">
+            <label for="likedFood">food</label>
+            <input type="checkbox" id="likedHotel" name="liked[]" value="hotel">
+            <label for="likedHotel">hotel</label>
+            <input type="checkbox" id="likedWeather" name="liked[]" value="weather">
+            <label for="likedWeather">weather</label>
+            <input type="checkbox" id="likedPeople" name="liked[]" checked value="people">
+            <label for="likedPeople">people</label>
+        </div>
+
+        <input type="file" id="userFile" name="userFile" multiple>
+        <br>
+
+        <div>
+            <label for="website">homepage:</label>
+            <input type="url" id="website" name="website" pattern="https?://.+" title="include http://">
+        </div>
+
+        <label for="search-item">Search:</label>
+        <input list="browsers" id="search-item" name="search">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Safari">
+        </datalist>
+
+        <br><br>
+
+        <label for="user-image">Upload Image.png :</label>
+        <input type="file" id="user-image" name="images" accept=".png, image/png">
+
+        <br><br>
+
+        <label for="prefix">Mobile Number:</label>
+        <div style="display: inline-flex; direction: ltr;">
+
+            <select id="prefix" name="prefix" required>
+                <option value="010">010</option>
+                <option value="012">012</option>
+                <option value="015">015</option>
+            </select>
+
+            <input type="tel" id="phoneNumber" name="phone_number" placeholder="********" pattern="[0-9]{8}"
+                maxlength="8" required>
+        </div>
+
+        <br><br>
+
+        
+   <fieldset>
+    <legend>Search</legend>
+
+    <label for="quickSearch">Search:</label>
+    <input type="search" id="quickSearch" name="quickSearch" placeholder="Type to search...">
+
+    <button type="button">Find</button>
+</fieldset>
+       
+        <div>
+            <label for="rating">rating</label>
+            <input type="range" id="rating" name="rating" min="200" max="400" value="200">
+            <output id="ratingOutput" for="rating"></output>
+        </div>
+
+        <div>
+            <label for="userComment">comment</label>
+            <textarea name="userComment" id="userComment" placeholder="tell us about your trip experience" cols="50"
+                rows="4"></textarea>
+        </div>
+
+        <input type="submit" value="login">
+        <button type="submit">register</button>
+
+        <input type="reset" value="clear data">
+        <button type="reset">clear info</button>
+
+    </form>
+</body>
+
+</html>
