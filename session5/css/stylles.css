@@ -1,0 +1,292 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding-top-bottom {
+    padding: 6% 0%;
+}
+
+.w-30 {
+    width: 31%;
+}
+
+.w-48 {
+    width: 48%;
+}
+
+.margin-bottom {
+    margin-bottom: 3%;
+}
+
+
+.bg-yellow {
+    background-color: #ffc107;
+    color: white;
+}
+
+.bg-dark {
+    background-color: #1a2b3c;
+    color: white;
+}
+
+.bg-footer {
+    background-color: #16262e;
+    color: white;
+}
+
+.btn {
+    padding: 12px 26px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+.search-form {
+    background: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    top: 18px;
+    color: gray;
+}
+
+.search-input {
+    padding: 16px 20px 16px 45px;
+    border: none;
+    outline: none;
+    width: 340px;
+}
+
+
+
+nav {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    background: white;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+.hero-section {
+    min-height: 640px;
+    margin-top: 25px;
+   background-image: url('../img/1-ae-16296_waferfab_bildschirm_96_dpi_img_w1280.jpg');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: top;
+    background-size: 70% 100%;
+}
+
+.hero-content {
+    padding-top: 8%;
+    margin-left: 3%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #1a2b3c;
+    margin-bottom: 45px;
+    line-height: 1.25;
+}
+
+.hero-badge {
+    right: 0;
+    bottom: 0;
+    padding: 20px 40px;
+}
+
+.hero-badge span {
+    margin-right: 25px;
+}
+
+.scroll-down {
+    left: -4%;
+    bottom: 8%;
+    transform: rotate(-90deg);
+    color: gray;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.scroll-down s {
+    transform: rotate(90deg);
+    margin-right: 5px;
+}
+.title-style {
+    color: #1a2b3c;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.stat-card {
+    width: 48%;
+    background-color: #fbfbfb;
+    border: 1px solid #f0f0f0;
+    padding: 10% 5%;
+    margin-bottom: 4%;
+}
+
+.stat-card h3 {
+    color: #ffc107;
+    font-size: 36px;
+}
+
+/* Apartments Section */
+.custom-card {
+    background: white;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 3%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.custom-card img {
+    width: 100%;
+    height: 220px;
+    display: block;
+}
+
+.custom-card .card-body {
+    padding: 5%;
+}
+
+.card-footer {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.price {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.meta-info span {
+    margin-left: 10px;
+    color: gray;
+    font-size: 12px;
+}
+
+.reverse-row {
+    flex-direction: row-reverse;
+}
+
+.feature-img-box {
+    width: 48%;
+}
+
+.feature-img-box img {
+    width: 100%;
+    height: 300px;
+    display: block;
+}
+
+
+.feature-badge {
+    bottom: 20px;
+    padding: 12px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.badge-center {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+}
+.badge-right-out {
+    right: -25px;
+}
+
+.footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 4%;
+    margin-bottom: 4%;
+}
+
+.newsletter-form input {
+    padding: 14px;
+    border: none;
+    outline: none;
+    width: 260px;
+}
+
+.newsletter-form button {
+    border: none;
+    background: white;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.footer-col {
+    width: 15%;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    font-size: 13px;
+}
