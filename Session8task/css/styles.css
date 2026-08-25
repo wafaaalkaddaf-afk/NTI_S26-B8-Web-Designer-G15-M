@@ -1,0 +1,84 @@
+
+.card-one {
+    position: relative;
+    width: 30%;
+    padding: 3% 2%;
+    background-color: #ffffff;
+    border: 1px solid #eef0f3;
+    border-radius: 10px;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.card-one .badge-corner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    background-color: #16a085;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    transition: 0.4s;
+}
+
+.card-one .badge-corner i {
+    color: #ffffff;
+    font-size: 13px;
+    transform: translate(3px, -3px);
+    transition: 0.3s;
+}
+.card-one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    background-color: #16a085;
+    border-bottom-left-radius: 100%;
+    transition: 0.5s ease-in-out;
+    z-index: 1;
+}
+.card-one .content {
+    position: relative;
+    z-index: 2;
+}
+
+.card-one h3 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 3%;
+    transition: 0.4s;
+}
+
+.card-one p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #7f8c8d;
+    transition: 0.4s;
+}
+.card-one:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 25px rgba(22, 160, 133, 0.25);
+}
+
+
+.card-one:hover::before {
+    width: 250%;
+    height: 250%;
+}
+
+
+.card-one:hover h3,
+.card-one:hover p {
+    color: #ffffff;}
+
+.card-one:hover .badge-corner {
+    background-color: transparent;
+}
