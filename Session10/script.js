@@ -1,4 +1,4 @@
-var degree=prompt("enter your degree");
+/*var degree=prompt("enter your degree");
 if(degree==null || degree==""){
     alert("enter your degree");
 }
@@ -15,4 +15,19 @@ else if(degree>=80){
 }
 else {
     alert("failed")
-}
+}*/
+function ss (start,endNum,breakNum,countNum){
+    if(start!==undefined&&endNum !==undefined &&breakNum !==undefined&&countNum !==undefined){
+        for(var i=start;i<=endNum;i++){
+            if(i==breakNum){
+                break;
+        }if(i==countNum){
+            continue;}
+            console.log(i);
+        }
+    } else{
+        console.log("entr 4 parameter")
+    }}
+
+ss(1,10,5,8)
+ss(1,10,5)
