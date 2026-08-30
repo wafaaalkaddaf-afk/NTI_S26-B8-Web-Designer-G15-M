@@ -15,10 +15,10 @@ else if(degree>=80){
 }
 else {
     alert("failed")
-}*/
+}
 function ss (start,endNum,breakNum,countNum){
     if(start!==undefined&&endNum !==undefined &&breakNum !==undefined&&countNum !==undefined){
-        for(var i=start;i<=endNum;i++){
+        for(var i=start; i<=endNum; i++){
             if(i==breakNum){
                 break;
         }if(i==countNum){
@@ -30,4 +30,29 @@ function ss (start,endNum,breakNum,countNum){
     }}
 
 ss(1,10,5,8)
-ss(1,10,5)
+ss(1,10,4,9)
+ss(1,10,5)*/
+
+ var courses =["HTML","CSS","JS"];
+    var user =prompt("enter nameOfCourse" );
+    if(user===null||user.trim()===""){
+        alert("please enter nameOfCourse")
+    }else{
+        var input=user.trim().toUpperCase();
+        var isFound=false;
+for (var i=0;i<courses.length;i++){
+    if(courses[i].toUpperCase()==input){
+        isFound=true;
+        break;
+    }
+}
+if(isFound){
+    alert("course is available")
+}else {
+    courses[courses.length]=input;
+    alert("course has been added: "+ " "+courses)
+    console.log("array of course after update ",courses)
+ 
+}
+    }
+
