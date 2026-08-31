@@ -1,0 +1,285 @@
+/* ==========================================================================
+   CSS Variables & Base Reset
+   ========================================================================== */
+:root {
+    --primary-yellow: #FFD400;
+    --primary-yellow-hover: #e6bf00;
+    --text-primary: #111111;
+    --text-secondary: #5F6673;
+    --page-bg: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --border-color: #E2E6EA;
+    --card-radius: 15px;
+    --btn-radius: 15px;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text-primary);
+    background-color: var(--page-bg);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   1. Header & Navigation Bar (نسخة مصغّرة ومدمجة)
+   ========================================================================== */
+.top-navbar {
+    min-height: 70px; /* تم تقليلها من 110px */
+    height: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+@media (min-width: 992px) {
+    .top-navbar {
+        height: 80px; /* تم تقليلها من 130px */
+    }
+}
+
+/* تصغير اللوجو ليتناسب مع الارتفاع الجديد */
+.eda-logo {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 34px; /* تم تقليله من 44px */
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* شريط البحث المصغر */
+.search-container {
+    width: 100%;
+    max-width: 440px; /* تم تقليله من 500px */
+}
+
+.search-bar {
+    width: 100%;
+    height: 44px; /* تم تقليله من 56px */
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 25px;
+}
+
+.search-input {
+    font-size: 14px; /* تم تقليله من 16px */
+}
+
+.search-input::placeholder {
+    font-size: 14px;
+}
+
+.search-submit-btn {
+    width: 34px; /* تم تقليله من 42px */
+    height: 34px; /* تم تقليله من 42px */
+    min-width: 34px;
+}
+
+.search-submit-btn i {
+    font-size: 1rem !important; /* تقليل حجم سهم الإرسال */
+}
+
+/* روابط التنقل والصورة الرمزية */
+.nav-link-custom {
+    font-size: 15px; /* تم تقليله من 16px */
+}
+
+.avatar-circle {
+    width: 34px; /* تم تقليله من 38px */
+    height: 34px;
+}
+
+/* تعديل حساب ارتفاع المحتوى ليتطابق مع الارتفاع الجديد */
+.page-layout-wrapper {
+    min-height: calc(100vh - 80px); /* تم تعديله من 130px إلى 80px */
+}
+
+/* ==========================================================================
+   2. Layout & Left Sidebar
+   ========================================================================== */
+.page-layout-wrapper {
+    min-height: calc(100vh - 130px);
+}
+
+.course-sidebar {
+    width: 320px;
+    min-width: 320px;
+}
+
+.sidebar-inner {
+    padding: 40px 35px;
+}
+
+.course-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+.sidebar-section-header {
+    margin-bottom: 25px;
+}
+
+.module-nav-list {
+    width: 100%;
+}
+
+.module-item {
+    height: 70px;
+    width: 100%;
+    border-radius: var(--card-radius);
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.module-item.active {
+    background-color: var(--primary-yellow);
+    font-weight: 600;
+}
+
+.module-item:not(.active):hover {
+    background-color: #F1F3F5;
+}
+
+/* ==========================================================================
+   3. Main Content & Lesson Cards
+   ========================================================================== */
+.main-content-area {
+    background-color: var(--page-bg);
+}
+
+.main-module-title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.metadata-text {
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.lesson-card {
+    min-height: 110px;
+    border-radius: var(--card-radius);
+    padding: 24px 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.lesson-icon-box {
+    width: 30px;
+    height: 30px;
+}
+
+.lesson-title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.lesson-meta {
+    font-size: 15px;
+}
+
+.btn-open {
+    background-color: var(--primary-yellow);
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 600;
+    width: 125px;
+    height: 48px;
+    border-radius: var(--btn-radius);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-open:hover {
+    background-color: var(--primary-yellow-hover);
+    color: var(--text-primary);
+}
+
+.btn-open:active {
+    transform: scale(0.97);
+}
+
+/* ==========================================================================
+   4. Right Weekly Goal Card
+   ========================================================================== */
+.weekly-goal-card {
+    border-radius: var(--card-radius);
+    padding: 28px 25px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    max-width: 380px;
+}
+
+.goal-title {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.goal-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.weekday-container {
+    max-width: 270px;
+}
+
+.weekday-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: #FFFFFF;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.edit-goal-link {
+    color: #D4A000;
+    font-size: 15px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.edit-goal-link:hover {
+    color: #a87f00;
+    text-decoration: underline !important;
+}
+
+/* ==========================================================================
+   5. Responsive Adjustments
+   ========================================================================== */
+@media (max-width: 767.98px) {
+    .lesson-card {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 18px;
+        padding: 20px;
+    }
+    
+    .btn-open {
+        width: 100%;
+    }
+
+    .weekly-goal-card {
+        max-width: 100%;
+    }
+}
